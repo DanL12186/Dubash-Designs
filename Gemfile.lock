@@ -120,7 +120,9 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.0512)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.2)
@@ -135,7 +137,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.5)
-    puma (4.3.5)
+    puma (5.6.8)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -233,7 +235,7 @@ DEPENDENCIES
   mailgun-ruby (~> 1.1.6)
   pg (>= 0.18, < 2.0)
   pry
-  puma (>= 3.11)
+  puma (~> 5.0)
   rails (>= 5.2)
   sassc-rails
   selenium-webdriver
@@ -243,7 +245,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
